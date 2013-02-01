@@ -1,0 +1,29 @@
+cookbooks:
+  - fosdem-database:
+  - fosdem-loadbalancer:
+  - fosdem-wordpress:
+
+environments:
+
+roles:
+  - database-server:
+  - application-server:
+  - load-balancer:
+
+data bags:
+
+clusters:
+  - amazon:
+    - ec2 1:
+        run_list:  role[database-server]
+        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-3d4ff254 -f m1.small
+    - ec2 2:
+        run_list:  role[application-server]
+        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-3d4ff254 -f m1.small
+    - ec2 1:
+        run_list:  role[load-balancer]
+        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-3d4ff254 -f m1.small
+
+
+
+
