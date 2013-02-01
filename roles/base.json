@@ -1,18 +1,15 @@
 {
-  "name": "load-balancer",
+  "name": "base",
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
   "override_attributes": {
-    "haproxy" : {
-      "app_server_role" : "application-server"
-    }
   },
   "chef_type": "role",
   "run_list": [
-    "role[base]",
-    "recipe[fosdem-loadbalancer]"
+    "recipe[apt]",
+    "recipe[build-essential]"
   ],
   "env_run_lists": {
   }

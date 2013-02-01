@@ -21,13 +21,11 @@ cookbooks:
   - windows:
   - wordpress:
   - zsh:
-  - fosdem-database:
-  - fosdem-loadbalancer:
-  - fosdem-wordpress:
 
 environments:
 
 roles:
+  - base:
   - database-server:
   - application-server:
   - load-balancer:

@@ -8,6 +8,7 @@
   },
   "chef_type": "role",
   "run_list": [
+    "role[base]",
     "recipe[fosdem-wordpress]"
   ],
   "env_run_lists": {
