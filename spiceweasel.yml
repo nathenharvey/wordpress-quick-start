@@ -1,4 +1,26 @@
 cookbooks:
+  - cron:
+  - mysql:
+  - yum:
+  - openssl:
+  - xml:
+  - php:
+  - apache2:
+  - apt:
+  - build-essential:
+  - chef-client:
+  - chef_handler:
+  - dmg:
+  - fosdem-database:
+  - fosdem-loadbalancer:
+  - fosdem-wordpress:
+  - git:
+  - runit:
+  - sudo:
+  - users:
+  - windows:
+  - wordpress:
+  - zsh:
   - fosdem-database:
   - fosdem-loadbalancer:
   - fosdem-wordpress:
