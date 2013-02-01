@@ -1,5 +1,6 @@
 cookbooks:
   - cron:
+  - cpu:
   - mysql:
   - yum:
   - openssl:
@@ -14,6 +15,7 @@ cookbooks:
   - fosdem-database:
   - fosdem-loadbalancer:
   - fosdem-wordpress:
+  - haproxy:
   - git:
   - runit:
   - sudo:

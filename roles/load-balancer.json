@@ -6,7 +6,11 @@
   },
   "override_attributes": {
     "haproxy" : {
-      "app_server_role" : "application-server"
+      "app_server_role" : "application-server",
+      "member_port" : "80",
+      "admin" : {
+        "address_bind" : "0.0.0.0"
+      }
     }
   },
   "chef_type": "role",
