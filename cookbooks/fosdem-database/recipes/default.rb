@@ -8,7 +8,7 @@
 #
 include_recipe "mysql::server"
 
-chef_gem "mysql"
+gem_package "mysql"
 
 node.set['wordpress']['db']['user'] = 'wordpress'
 node.set['wordpress']['db']['database'] = 'wordpressdb'
