@@ -1,28 +1,29 @@
 cookbooks:
+  - build-essential:
+  - openssl:
   - cron:
   - cpu:
   - mysql:
   - yum:
-  - openssl:
   - xml:
+  - chef_handler:
+  - windows:
+  - haproxy:
   - php:
   - apache2:
   - apt:
-  - build-essential:
   - chef-client:
-  - chef_handler:
   - dmg:
-  - fosdem-database:
-  - fosdem-loadbalancer:
-  - fosdem-wordpress:
   - haproxy:
   - git:
   - runit:
   - sudo:
   - users:
-  - windows:
   - wordpress:
   - zsh:
+  - fosdem-database:
+  - fosdem-loadbalancer:
+  - fosdem-wordpress:
 
 environments:
 
