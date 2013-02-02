@@ -1,40 +1,40 @@
-cookbooks:
-  - build-essential:
-  - openssl:
-  - cron:
-  - cpu:
-  - mysql:
-  - yum:
-  - xml:
-  - chef_handler:
-  - windows:
-  - haproxy:
-  - php:
-  - apache2:
-  - apt:
-  - chef-client:
-  - dmg:
-  - haproxy:
-  - git:
-  - runit:
-  - sudo:
-  - users:
-  - wordpress:
-  - zsh:
-  - fosdem-database:
-  - fosdem-loadbalancer:
-  - fosdem-wordpress:
-
-environments:
-
-roles:
-  - base:
-  - database-server:
-  - application-server:
-  - load-balancer:
-
-data bags:
-
+# cookbooks:
+#   - build-essential:
+#   - openssl:
+#   - cron:
+#   - cpu:
+#   - mysql:
+#   - yum:
+#   - xml:
+#   - chef_handler:
+#   - windows:
+#   - haproxy:
+#   - php:
+#   - apache2:
+#   - apt:
+#   - chef-client:
+#   - dmg:
+#   - haproxy:
+#   - git:
+#   - runit:
+#   - sudo:
+#   - users:
+#   - wordpress:
+#   - zsh:
+#   - fosdem-database:
+#   - fosdem-loadbalancer:
+#   - fosdem-wordpress:
+# 
+# environments:
+# 
+# roles:
+#   - base:
+#   - database-server:
+#   - application-server:
+#   - load-balancer:
+# 
+# data bags:
+# 
 clusters:
   - amazon:
     - ec2 1:
