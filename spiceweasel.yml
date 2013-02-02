@@ -3,6 +3,9 @@
 #   - openssl:
 #   - cron:
 #   - cpu:
+#   - postgresql
+#   - xfs:
+#   - aws:
 #   - mysql:
 #   - yum:
 #   - xml:
