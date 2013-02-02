@@ -1,5 +1,4 @@
-1 HA Proxy
-2 Wordpress
-1 Database
+1 HA Proxy Server
+2 Wordpress Servers
+1 Database Server
 
-ntpd configuration, too.  with DB as master
