@@ -8,42 +8,32 @@
 #
 include_recipe "mysql::server"
 
-gem_package "mysql"
-
 node.set['wordpress']['db']['user'] = 'wordpress'
 node.set['wordpress']['db']['database'] = 'wordpressdb'
 node.set['wordpress']['db']['password'] = secure_password
 
-execute "mysql-install-wp-privileges" do
-  command "/usr/bin/mysql -u root -p\"#{node['mysql']['server_root_password']}\" < #{node['mysql']['conf_dir']}/wp-grants.sql"
-  action :nothing
-end
+mysql_connection_info = {
+  :host => 'localhost',
+  :username => 'root',
+  :password => node['mysql']['server_root_password']
+}
 
-template "#{node['mysql']['conf_dir']}/wp-grants.sql" do
-  source "grants.sql.erb"
-  owner "root"
-  group "root"
-  mode "0600"
-  variables(
-    :user     => node['wordpress']['db']['user'],
-    :password => node['wordpress']['db']['password'],
-    :database => node['wordpress']['db']['database']
-  )
-  notifies :run, "execute[mysql-install-wp-privileges]", :immediately
-end
-
-execute "create #{node['wordpress']['db']['database']} database" do
-  command "/usr/bin/mysqladmin -u root -p\"#{node['mysql']['server_root_password']}\" create #{node['wordpress']['db']['database']}"
-  not_if do
-    # Make sure gem is detected if it was just installed earlier in this recipe
-    require 'rubygems'
-    Gem.clear_paths
-    require 'mysql'
-    m = Mysql.new("localhost", "root", node['mysql']['server_root_password'])
-    m.list_dbs.include?(node['wordpress']['db']['database'])
-  end
+mysql_database node['wordpress']['db']['database'] do
+  connection mysql_connection_info
+  action :create
   notifies :create, "ruby_block[save node data]", :immediately unless Chef::Config[:solo]
 end
+
+['localhost', '%', node['fqdn']].each do |db_host|
+  mysql_database_user node['wordpress']['db']['user'] do
+    connection mysql_connection_info
+    password node['wordpress']['db']['password']
+    database_name node['wordpress']['db']['database']
+    host db_host
+    action :grant
+  end
+end
+
 
 # save node data after writing the MYSQL root password, so that a failed chef-client run that gets this far doesn't cause an unknown password to get applied to the box without being saved in the node data.
 unless Chef::Config[:solo]
