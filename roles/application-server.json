@@ -9,7 +9,7 @@
   "chef_type": "role",
   "run_list": [
     "role[base]",
-    "recipe[quick-start--wordpress]"
+    "recipe[quick-start-wordpress]"
   ],
   "env_run_lists": {
   }
