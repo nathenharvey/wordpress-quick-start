@@ -24,9 +24,9 @@ cookbooks:
   - users:
   - wordpress:
   - zsh:
-  - fosdem-database:
-  - fosdem-loadbalancer:
-  - fosdem-wordpress:
+  - quick-start-database:
+  - quick-start-loadbalancer:
+  - quick-start-wordpress:
 
 environments:
 
@@ -42,10 +42,10 @@ clusters:
   - amazon:
     - ec2 1:
         run_list:  role[database-server]
-        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-3d4ff254 -f m1.medium
+        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-9b3db0f2 -f m1.small
     - ec2 2:
         run_list:  role[application-server]
-        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-3d4ff254 -f m1.medium
+        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-9b3db0f2 -f m1.small
     - ec2 1:
         run_list:  role[load-balancer]
-        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-3d4ff254 -f m1.medium
+        options: -S nharvey -i ~/.aws/nharvey-fosdem.pem -x ubuntu -G nh-fosdem -I ami-9b3db0f2 -f m1.small
