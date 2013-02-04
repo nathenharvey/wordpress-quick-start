@@ -3,6 +3,7 @@ cookbooks:
   - openssl:
   - cron:
   - cpu:
+  - database:
   - postgresql:
   - xfs:
   - aws:
