@@ -9,7 +9,7 @@
   "chef_type": "role",
   "run_list": [
     "role[base]",
-    "recipe[fosdem-database]"
+    "recipe[quick-start-database]"
   ],
   "env_run_lists": {
   }

@@ -16,7 +16,7 @@
   "chef_type": "role",
   "run_list": [
     "role[base]",
-    "recipe[fosdem-loadbalancer]"
+    "recipe[quick-start-loadbalancer]"
   ],
   "env_run_lists": {
   }
