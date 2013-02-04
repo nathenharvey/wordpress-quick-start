@@ -10,7 +10,7 @@ At the end of this guide, you'll have four total Ubuntu 12.10 systems running in
 - 2 Wordpress application servers.
 - 1 MySQL database server.
 
-We're going to reuse a number of cookbooks from the [Cookbooks Community Site](http://cookbooks.opscode.com) to build the environment. For example, the source code lives in **git**, so that cookbook will ensure Git is available. The load balancer is **haproxy** because it is very simple to deploy and configure, and we use a recipe that automatically discovers the Wordpress application systems. The heavy lifting is handled by recipes in the **application** and **database** cookbooks. Finally, as we're deploying Wordpress, we'll get some help from the **wordpress** cookbook.
+We're going to reuse a number of cookbooks from the [Cookbooks Community Site](http://cookbooks.opscode.com) to build the environment. For example, the source code lives in **git**, so that cookbook will ensure Git is available. The load balancer is **haproxy** because it is very simple to deploy and configure, and we use a recipe that automatically discovers the Wordpress application systems. 
 
 If you don't already have an account with Amazon AWS, go to [Amazon Web Sevices](http://aws.amazon.com/) and click "Sign up". You'll need the access and secret access key credentials from the sign-up later.
 
