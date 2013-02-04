@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: fosdem-database
+# Cookbook Name:: quick-start-database
 # Recipe:: default
 #
 # Copyright 2013, YOUR_COMPANY_NAME

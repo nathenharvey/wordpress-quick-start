@@ -1,10 +1,10 @@
-# CHANGELOG for fosdem-loadbalancer
+# CHANGELOG for quick-start-loadbalancer
 
-This file is used to list changes made in each version of fosdem-loadbalancer.
+This file is used to list changes made in each version of quick-start-loadbalancer.
 
 ## 0.1.0:
 
-* Initial release of fosdem-loadbalancer
+* Initial release of quick-start-loadbalancer
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

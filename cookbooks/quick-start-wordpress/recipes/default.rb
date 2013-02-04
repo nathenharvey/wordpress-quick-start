@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: fosdem-wordpress
+# Cookbook Name:: quick-start-wordpress
 # Recipe:: default
 #
 # Copyright 2013, YOUR_COMPANY_NAME

@@ -1,10 +1,10 @@
-# CHANGELOG for fosdem-wordpress
+# CHANGELOG for quick-start-wordpress
 
-This file is used to list changes made in each version of fosdem-wordpress.
+This file is used to list changes made in each version of quick-start-wordpress.
 
 ## 0.1.0:
 
-* Initial release of fosdem-wordpress
+* Initial release of quick-start-wordpress
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

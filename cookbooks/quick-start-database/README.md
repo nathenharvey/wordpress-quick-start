@@ -1,4 +1,4 @@
-fosdem-database Cookbook
+quick-start-database Cookbook
 ========================
 TODO: Enter the cookbook description here.
 
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - fosdem-database needs toaster to brown your bagel.
+- `toaster` - quick-start-database needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List you cookbook attributes here.
 
 e.g.
-#### fosdem-database::default
+#### quick-start-database::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['fosdem-database']['bacon']</tt></td>
+    <td><tt>['quick-start-database']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### fosdem-database::default
+#### quick-start-database::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `fosdem-database` in your node's `run_list`:
+Just include `quick-start-database` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[fosdem-database]"
+    "recipe[quick-start-database]"
   ]
 }
 ```

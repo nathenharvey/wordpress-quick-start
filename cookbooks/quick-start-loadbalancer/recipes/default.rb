@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: fosdem-loadbalancer
+# Cookbook Name:: quick-start-loadbalancer
 # Recipe:: default
 #
 # Copyright 2013, YOUR_COMPANY_NAME

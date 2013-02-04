@@ -1,10 +1,10 @@
-# CHANGELOG for fosdem-database
+# CHANGELOG for quick-start--database
 
-This file is used to list changes made in each version of fosdem-database.
+This file is used to list changes made in each version of quick-start--database.
 
 ## 0.1.0:
 
-* Initial release of fosdem-database
+* Initial release of quick-start--database
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
