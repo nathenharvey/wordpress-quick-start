@@ -1,6 +1,6 @@
 This guide describes how to build a Wordpress application stack using Chef cookbooks available from the [Cookbooks Community Site](http://cookbooks.opscode.com) and Hosted Chef. It assumes you have Chef installed.  
 
-*This guide uses Ubuntu 12.10 on Amazon AWS EC2 with Chef 10.\*.\*.*
+*This guide uses Ubuntu 12.10 on Amazon AWS EC2 with Chef 10.**
 
 ***Note:** At this time, the steps described above have only been tested on the identified platform(s).  Opscode has not researched and does not support alternative steps that may lead to successful completion on other platforms.  Platform(s) supported by this guide may change over time, so please do check back for updates.  If you'd like to undertake this guide on an alternate platform, you may desire to turn to open source community resources for support assistance.*
 
